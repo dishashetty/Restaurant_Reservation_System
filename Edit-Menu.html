@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Menu</title>
+<style type="text/css">
+
+label:after {
+  content: ": ";
+}
+
+label {
+  
+  color: white;
+  font-weight: bold;
+  padding: 4px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: xx-small;
+}</style>
+<style>
+body{background-repeat:repeat-y;background-size:100%}
+#form{width: 15em;height: 3sem;}
+#left{line-height:30px;width:250px;float:left;padding:15px; }
+#right{line-height:30px;width:250px;float:right;padding:15px; }
+<script src="form_validation.js"></script>
+</style>
+</head>
+<body background="background.jpg">
+<td>
+<font size="4"><a href="Login.html"style="float:right"><font color="white">Logout</a></font>
+</td>
+<h1 align="center"><font size="10" color="black">R@$0Y!</font></h1>
+<h3 align="center"><color="black">-The Essence Of Indian Tradition-</font></h3>
+<table align="center" cellpadding=30>
+<tr>
+<td><form action="View-Profile.php" method="post"><input type="submit" value="View-Profile" id="form" ></form></td>
+<td><form action="Edit-Menu.html" method="post"><input type="submit" value="Edit-Menu" id="form"></form></td>
+<td><form action="edit_reservation.php" method="post"><input type="submit" value="Edit-Reservation" id="form"></form></td>
+
+</tr>
+</table>
+
+<table align="center">
+<form method="post" action= "add_dish.php" onsubmit="return formvalidation();">
+
+<tr><td><label for="name">NAME</label></td></tr>
+<tr><td> <input type="text" name="name" required /></td></tr>
+<tr><td><label for="price">PRICE IN $</label></td><tr>
+<tr><td> <input type="text" name="price" required/></td></tr>
+<tr><td><label for="description">DESCRIPTION</label></td><tr>
+ <tr><td><input type="text" name="description" required/></td></tr>
+
+<tr><td><input type="submit" value="Add Dish"></td></tr>
+</form>
+
+
+<tr><td><br><br></td></tr>
+
+
+<form action="rem_dish.php" method="post" onsubmit="return formvalidation();">
+<tr><td><label for="name">NAME</label></td></tr>
+<tr><td><input type="text" name="name" required/></td></tr>
+<tr><td><input type="submit" value="Remove Dish" required></td></tr>
+</form>
+</table>
+</body>
+</html>
+

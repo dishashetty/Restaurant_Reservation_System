@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <style>
+body{background-repeat:no-repeat;
+background-size:100%}
+  #form{
+width: 15em;
+height: 3sem;}
+</style>
+ </head>
+<body background="reservation.jpg">
+<h1 align="center"><font size="10" color="white">R@$0Y!</font></h1>
+<h3 align="center"><font color="white">-The Essence Of Indian Tradition-</font></h3>
+<table cellpadding=30>
+<tr>
+<td><form action="home.html" method="post"><input type="submit" value="Home" id="form" ></form></td>
+<td><form action="menu.php" method="post"><input type="submit" value="Menu" id="form"></form></td>
+  <td><form action="res.html" method="post"><input type="submit" value="Reservation" id="form"></form></td>
+  <td><form action="about.html" method="post"><input type="submit" value="About us" id="form"></form></td>
+<td><form action="Login.html" method="post"><input type="submit" value="Employee-Login" id="form"></form></td>
+</tr>
+
+<tr></tr>
+<td><form action="Apply.html" method="post"><input type="submit" value="Apply for a Job" id="form"></form></td>
+
+<td><form action="Applicant_Login.html" method="post"><input type="submit" value="Applicant Login" id="form"></form></td>
+
+</table>
+
+<font size="4" color="white">
+<p class="pagetitle"></p>  
+<div class="bodycopy" style="width: 1000px; margin: 0 auto; text-align: center;">
+<p style="font-size: 18px; font-family: georgia, serif;" align="center">
+<i><h3>Restaurant</h3></i></p>
+<p style="text-align: center;">
+&nbsp; Breakfast 8:00am-11:30am &nbsp; | Lunch 12:00am-4:30pm &nbsp;<br>  &nbsp; 
+&nbsp; |&nbsp; Dinner 5:30pm-10:00pm (11:00pm 
+Fri &amp; Sat) &nbsp;</p> <br> 
+
+<div style="text-align: center;">
+
+<center><h2>Fill the below details to register</h2></center>
+<form method="post" name="registration" onsubmit="return formvalidation();" action= "resredirect.php">
+
+<br><br><table align="center">
+
+</td></tr>
+<tr><td><label>Select Time</label></td><td>
+<select name="time"><opt group label="select meal time">n</label>
+<option value="10:00:00">10:00 AM
+<option value="11:00:00">11:00 AM
+<option value="12:00:00">12:00 PM
+<option value="13:00:00">1:00 PM
+<option value="14:00:00">2:00 PM
+<option value="15:00:00">3:00 PM
+
+</select>
+</td></tr>
+
+<tr>
+<td>Enter No of members*:</td>
+<td align=left><input type="number" name="emem" min="1" max="10" size="15" /></td>
+</tr>
+<tr>
+<td>Date*:</td>
+<td align=left><input type="date" name="date_book" id="o">
+</td>
+</tr>
+<tr>
+<td>Enter Name*:</td>
+<td align=left><input type="text" name="ename" size="15" required pattern="?[A-Za-z]" /></td>
+</td></tr>
+<tr>
+<td>Enter contact*:</td>
+<td align=left><input type="number" name="econtact" size="15" pattern="[0-9]{10}" required title="Enter 10 digit number" /></td>
+</td>
+<td><font size="4"><a href="booktable.php"><font color="white">Available tables</a></font>
+</td></tr><tr><td></td><td>
+<input type="submit" value="Book it">
+</td>
+</tr>
+</table>
+</form>
+<center>
+<pre>* Mandatory to fill all the stated details</pre>
+<u>Note:</u>For more than 10 members please call +1(012)345-6789
+</center>
+</body>
+</HTML>

@@ -1,0 +1,75 @@
+<!doctype html> 
+<html lang="en">
+<head>
+<title>home</title>
+<script src="form_validation.js"></script>
+<style>
+body{background-repeat:no-repeat;
+background-size:100%}
+p{color:white;}
+#form{
+width: 15em;
+height: 3sem;}
+</style>
+ </head>
+<body onload="document.registration.empid.focus();" background="login.jpg">
+<h1 align="center"><font size="10" color="white">R@$0Y!</font></h1>
+<h3 align="center"><font color="white">-The Essence Of Indian Tradition-</font></h3>
+<table cellpadding=30>
+<tr>
+<td><form action="home.html" method="post"><input type="submit" value="Home" id="form" ></form></td>
+  <td><form action="menu.php" method="post"><input type="submit" value="Menu" id="form"></form></td>
+  <td><form action="res.html" method="post"><input type="submit" value="Reservation" id="form"></form></td>
+  <td><form action="about.html" method="post"><input type="submit" value="About us" id="form"></form></td>
+<td><form action="Login.html" method="post"><input type="submit" value="Employee-Login" id="form"></form></td>
+<tr></tr>
+<td><form action="Apply.html" method="post"><input type="submit" value="Apply for a Job" id="form"></form></td>
+
+<td><form action="Applicant_Login.html" method="post"><input type="submit" value="Applicant Login" id="form"></form></td>
+
+
+
+
+
+</tr>
+</table><font size="4" color="white">
+<center><h1>Employee Login:</h1><HR>
+<form method="post" name="registration" onsubmit="return formvalidation();" action= "aut1.php">
+<table border=5 width=50%>
+
+<tr>
+<td align=center><label for="empid">Employee id:</label></td>
+<td align=left><input type="text" name="empid" size="12" required/></td>
+</tr>
+
+<tr>
+<td align=center><label for="emppass">Password:</label></td>
+<td align=left><input type="password" name="emppass" size="12" required/></td>
+</tr>
+<tr>
+<td align=center><label for="type">Employee-Type:</label></td>
+<td align=left>
+<input type="radio" name="emp" value="Manager" checked/>
+<span>Manager</span>
+<input type="radio" name="emp" value="Full Time"/>
+<span>Full Time</span>
+<input type="radio" name="emp" value="Part Time"/>
+<span>Part Time</span>
+</td>
+</tr> 
+<tr>
+<td colspan=2 align=center><input type="submit" name="submit" value="Submit"/>
+&nbsp&nbsp&nbsp<input type="reset" name="clear" value="Clear"/></td>
+</tr> 
+<tr>
+<td colspan=2 align=center>
+</td></tr>
+</table>
+      </form>
+</center>
+
+
+</body>
+</html>
+
+
